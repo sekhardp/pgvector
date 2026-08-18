@@ -10,6 +10,7 @@ ADD https://github.com/pgvector/pgvector.git#v0.8.6 /tmp/pgvector
 RUN apt-get update && \
 		apt-mark hold locales && \
 		apt-get install -y --no-install-recommends build-essential postgresql-server-dev-$PG_MAJOR && \
+		mkdir /tmp /tmp/pgvector &&\
 		cd /tmp/pgvector && \
 		make clean && \
 		make OPTFLAGS="" && \
