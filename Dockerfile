@@ -18,7 +18,7 @@ RUN set -eux; \
 		make OPTFLAGS=""; \
 		make install; \
 		install -d /usr/share/doc/pgvector; \
-		install -m 644 LICENSE README.md /usr/share/doc/pgvector && \
+		install -m 644 LICENSE README.md /usr/share/doc/pgvector; \
 		rm -r /tmp/pgvector; \
 		apt-get purge -y --auto-remove \
 			build-essential \
