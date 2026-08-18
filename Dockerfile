@@ -10,9 +10,9 @@ RUN set -eux; \
 		apt-get update; \
 		apt-get install -y --no-install-recommends \
 			build-essential \
+			ca-certificates \
 			git \
 			postgresql-server-dev-$PG_MAJOR; \
-		update-ca-certificates; \
 		git clone --depth 1 --branch "${PGVECTOR_VERSION}" https://github.com/sekhardp/pgvector.git /tmp/pgvector; \
 		cd /tmp/pgvector; \
 		make OPTFLAGS=""; \
