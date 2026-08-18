@@ -4,7 +4,7 @@
 	"description": "Supports L2 distance, inner product, and cosine distance",
 	"version": "0.8.6",
 	"maintainer": [
-		"Andrew Kane <andrew@ankane.org>"
+		"Sekhar Kota <sekhardp@gmail.com>"
 	],
 	"license": {
 		"PostgreSQL": "https://www.postgresql.org/about/licence"
@@ -25,13 +25,13 @@
 		}
 	},
 	"resources": {
-		"homepage": "https://github.com/pgvector/pgvector",
+		"homepage": "https://github.com/sekhardp/pgvector",
 		"bugtracker": {
-			"web": "https://github.com/pgvector/pgvector/issues"
+			"web": "https://github.com/sekhardp/pgvector/issues"
 		},
 		"repository": {
-			"url":  "https://github.com/pgvector/pgvector.git",
-			"web":  "https://github.com/pgvector/pgvector",
+			"url":  "https://github.com/sekhardp/pgvector.git",
+			"web":  "https://github.com/sekhardp/pgvector",
 			"type": "git"
 		}
 	},
