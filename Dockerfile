@@ -12,8 +12,7 @@ RUN set -eux; \
 			build-essential \
 			git \
 			postgresql-server-dev-$PG_MAJOR; \
-		git clone --depth 1 --branch "${PGVECTOR_VERSION}" \
-        	https://github.com/sekhardp/pgvector.git /tmp/pgvector; \
+		git clone --depth 1 --branch "${PGVECTOR_VERSION}" https://github.com/sekhardp/pgvector.git /tmp/pgvector; \
 		cd /tmp/pgvector; \
 		make OPTFLAGS=""; \
 		make install; \
