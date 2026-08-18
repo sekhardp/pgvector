@@ -8,7 +8,7 @@ ARG PGVECTOR_VERSION=v0.8.6
 
 RUN set -eux; \
 		apt-get update; \
-		apt-get install -y --no-install-recommends
+		apt-get install -y --no-install-recommends \
 			build-essential \
 			git \
 			postgresql-server-dev-$PG_MAJOR; \
