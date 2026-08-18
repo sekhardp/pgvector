@@ -12,6 +12,7 @@ RUN set -eux; \
 			build-essential \
 			git \
 			postgresql-server-dev-$PG_MAJOR; \
+		update-ca-certificates; \
 		git clone --depth 1 --branch "${PGVECTOR_VERSION}" https://github.com/sekhardp/pgvector.git /tmp/pgvector; \
 		cd /tmp/pgvector; \
 		make OPTFLAGS=""; \
@@ -21,6 +22,7 @@ RUN set -eux; \
 		rm -r /tmp/pgvector; \
 		apt-get purge -y --auto-remove \
 			build-essential \
+			ca-certificates \
 			git \
 			postgresql-server-dev-$PG_MAJOR; \
 		rm -rf /var/lib/apt/lists/*
